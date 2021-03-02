@@ -1,0 +1,160 @@
+{
+  "uid" : "d2c9141f049e961e",
+  "name" : "test_add[get_datas3]",
+  "fullName" : "test_calc.TestCalc#test_add",
+  "historyId" : "476d39602eb18d39341b499763a20c08",
+  "time" : {
+    "start" : 1614692107229,
+    "stop" : 1614692107230,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.1 == 0.3",
+  "statusTrace" : "self = <testing.test_calc.TestCalc object at 0x000001FEEBDE8FA0>, get_datas = [0.1, -0.2, 0.3]\n\n    @allure.story(\"加法模块\")\n    @pytest.mark.run(order=1)\n    def test_add(self,get_datas):\n       with allure.step(\"计算两个数相加\"):\n          calc = Calculator()\n          result = calc.add(get_datas[0],get_datas[1])\n          if isinstance(result, float):\n             result = round(result, 2)\n             # 得到相加结果之后写断言\n>         assert result == get_datas[2]\nE         assert -0.1 == 0.3\n\ntest_calc.py:36: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "print_desc",
+    "time" : {
+      "start" : 1614692107205,
+      "stop" : 1614692107205,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_datas",
+    "time" : {
+      "start" : 1614692107229,
+      "stop" : 1614692107229,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.1 == 0.3",
+    "statusTrace" : "self = <testing.test_calc.TestCalc object at 0x000001FEEBDE8FA0>, get_datas = [0.1, -0.2, 0.3]\n\n    @allure.story(\"加法模块\")\n    @pytest.mark.run(order=1)\n    def test_add(self,get_datas):\n       with allure.step(\"计算两个数相加\"):\n          calc = Calculator()\n          result = calc.add(get_datas[0],get_datas[1])\n          if isinstance(result, float):\n             result = round(result, 2)\n             # 得到相加结果之后写断言\n>         assert result == get_datas[2]\nE         assert -0.1 == 0.3\n\ntest_calc.py:36: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数相加",
+      "time" : {
+        "start" : 1614692107229,
+        "stop" : 1614692107230,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert -0.1 == 0.3\n",
+      "statusTrace" : "  File \"D:\\PycharmProjects\\pythonProject\\pytestWork\\testing\\test_calc.py\", line 36, in test_add\n    assert result == get_datas[2]\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "print_desc::0",
+    "time" : {
+      "start" : 1614692107363,
+      "stop" : 1614692107363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_datas::0",
+    "time" : {
+      "start" : 1614692107339,
+      "stop" : 1614692107339,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "加法模块"
+  }, {
+    "name" : "feature",
+    "value" : "计算器"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LHTC1CQRZC5VGE5"
+  }, {
+    "name" : "thread",
+    "value" : "15676-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_datas",
+    "value" : "[0.1, -0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "d2c9141f049e961e.json",
+  "parameterValues" : [ "[0.1, -0.2, 0.3]" ]
+}

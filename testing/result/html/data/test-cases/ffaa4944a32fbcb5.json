@@ -1,0 +1,116 @@
+{
+  "uid" : "ffaa4944a32fbcb5",
+  "name" : "test_mul",
+  "fullName" : "test_calc.TestCalc#test_mul",
+  "historyId" : "4697ced617839c310f4a722c0725404a",
+  "time" : {
+    "start" : 1614692107355,
+    "stop" : 1614692107355,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "print_desc",
+    "time" : {
+      "start" : 1614692107205,
+      "stop" : 1614692107205,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "43428756d00ff243",
+      "name" : "stdout",
+      "source" : "43428756d00ff243.txt",
+      "type" : "text/plain",
+      "size" : 13
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "print_desc::0",
+    "time" : {
+      "start" : 1614692107363,
+      "stop" : 1614692107363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "乘法模块"
+  }, {
+    "name" : "feature",
+    "value" : "计算器"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LHTC1CQRZC5VGE5"
+  }, {
+    "name" : "thread",
+    "value" : "15676-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1f36e4f02882218a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614690998363,
+        "stop" : 1614690998364,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "ffaa4944a32fbcb5.json",
+  "parameterValues" : [ ]
+}
