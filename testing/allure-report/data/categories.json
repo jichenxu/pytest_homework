@@ -6,13 +6,13 @@
     "children" : [ {
       "name" : "AssertionError: assert -0.1 == 0.3",
       "children" : [ {
-        "name" : "test_add[get_datas3]",
-        "uid" : "31d059755021e482",
+        "name" : "test_add[get_add_datas3]",
+        "uid" : "b8df985c0982e222",
         "parentUid" : "fb1e0065dc0c3c9adac6ca28b9995c4a",
         "status" : "failed",
         "time" : {
-          "start" : 1614692316651,
-          "stop" : 1614692316652,
+          "start" : 1614735996833,
+          "stop" : 1614735996834,
           "duration" : 1
         },
         "flaky" : false,
@@ -20,6 +20,23 @@
         "parameters" : [ "[0.1, -0.2, 0.3]" ]
       } ],
       "uid" : "fb1e0065dc0c3c9adac6ca28b9995c4a"
+    }, {
+      "name" : "AssertionError: assert 1 == 2",
+      "children" : [ {
+        "name" : "test_sub[get_sub_datas1]",
+        "uid" : "8dd74f66490d0ea5",
+        "parentUid" : "d89f5ad50f342bab320c0753c9baac45",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614735996943,
+          "stop" : 1614735996944,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[5, 4, 2]" ]
+      } ],
+      "uid" : "d89f5ad50f342bab320c0753c9baac45"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
