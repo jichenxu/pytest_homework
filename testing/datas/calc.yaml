@@ -1,24 +1,11 @@
 datas:
   add:
-    - - 1
-      - 1
-      - 2
-    - - 100
-      - 100
-      - 200
+    - [1,1,2]
+    - [100,100,200]
     - [0.1,0.2,0.3]
     - [0.1, -0.2, 0.3]
     - [-1,-1,-2]
+  add_id: ['int','bigint','float','failed','negative']
   sub:
-     - - 3
-       - 2
-       - 1
-     - - 5
-       - 4
-       - 2
-  myid:
-    - 'int'
-    - 'bigint'
-    - 'float'
-    - 'failed'
-    - 'minus'
+     - [3,2,1]
+  sub_id: ['int']

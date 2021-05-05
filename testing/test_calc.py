@@ -12,16 +12,13 @@ from python_code.calc import Calculator
 
 with open("./datas/calc.yaml") as f:
     datas = yaml.safe_load(f)['datas']
-    add_datas = datas['add']
-    sub_datas = datas['sub']
-    print(add_datas)
 
-@pytest.fixture(params=add_datas)
+@pytest.fixture(params=datas['add'],ids=datas['add_id'])
 def get_add_datas(request):
     data = request.param
     yield data
 
-@pytest.fixture(params=sub_datas)
+@pytest.fixture(params=datas['sub'],ids=datas['sub_id'])
 def get_sub_datas(request):
     data = request.param
     yield data
@@ -32,10 +29,9 @@ class TestCalc:
    #加法用例
    @allure.story("加法模块")
    @pytest.mark.run(order=1)
-   def test_add(self,get_add_datas):
+   def test_add(self,get_add_datas,get_cal):
       with allure.step("计算两个数相加"):
-         calc = Calculator()
-         result = calc.add(get_add_datas[0],get_add_datas[1])
+         result = get_cal.add(get_add_datas[0],get_add_datas[1])
          if isinstance(result, float):
             result = round(result, 2)
             # 得到相加结果之后写断言
@@ -49,10 +45,9 @@ class TestCalc:
    #减法用例
    @allure.story("减法模块")
    @pytest.mark.run(order=2)
-   def test_sub(self,get_sub_datas):
+   def test_sub(self,get_sub_datas,get_cal):
       with allure.step("计算两个数相减"):
-          calc = Calculator()
-          result = calc.sub(get_sub_datas[0],get_sub_datas[1])
+          result = get_cal.sub(get_sub_datas[0],get_sub_datas[1])
           assert result == get_sub_datas[2]
       print("测试减法")
    #乘法用例
